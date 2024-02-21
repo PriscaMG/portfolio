@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header>
+        <nav class="Header">
+            <a class="prisca" href="home.html">prisca</a>
+            <ul class="Header-menu">
+                <li><a href="portfolio.html" class="active"><span class="active-text">Portfolio</span></a></li>
+                <li><a href="contact.html" class="button"><span class="button-text">Me Contacter</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="barre">
+        <div class="texte">✺ Contactez-moi ✺ Contactez-moi ✺ Contactez-moi ✺ Contactez-moi ✺</div>
+    </div>
+
+    <div class="section">
+        <div class="texte-left">
+            <p>Je suis reconnaissante de votre intérêt <br> à me contacter. <br> Hâte de s'échanger avec vous.</p>
+        </div>
+
+        <div class="form-right">
+            <form action="#" method="post" id="myForm"> 
+
+                <p class="grand-titre">Nom <span>(obligatoire)</span></p>
+                <div class="titre-name">
+                    <p>Prénom</p>
+                    <p>Nom de famille</p>
+                </div>
+                <div class="name">
+                    <label for="prenom"></label><br>
+                    <input class="label1" type="text" id="prenom" name="prenom" required><br>
+                    <label for="NomdeFamille"></label><br>
+                    <input class="label2" type="text" id="NomdeFamille" name="NomdeFamille" required><br>
+                </div>
+                <div class="mail">
+                    <label for="email">E-mail <span>(obligatoire)</span></label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="message">
+                    <label for="message">Message <span>(obligatoire)</span></label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                </div>
+                <div class="send">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>"Message envoyé ! Merci <span id="thankYouName"></span> 🚀📩"</p>
+                </div>
+            </div>
+
+            <script src="contact.js"></script>
+
+            </div>        
+        </div>
+    
+        <!--Footer-->
+        <footer>
+            <div class="footer-social-media">
+                <ul>
+                    <li>
+                        <a href="prisca.rakotoari@gmail.com"><img src="./illustration/mail.png" alt=""></a>
+                        <a href="https://www.facebook.com/FanjaNirintsoa93"><img src="./illustration/facebook.png" alt=""></a>
+                        <a href="https://github.com/PriscaMG/PriscaMG"><img src="./illustration/github.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <p>© Copyright 2024 * Thanks for scrolling *</p>
+        </footer>
+    
+</body>
+</html>
