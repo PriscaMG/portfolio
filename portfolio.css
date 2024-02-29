@@ -1,7 +1,13 @@
 /* Style de texte */
-@import url(https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro);
+@font-face {
+    font-family: "Orpheus Pro";
+    src: url(./font/Orpheus-W05-Regular.ttf);
+}
 
-@import url(https://db.onlinewebfonts.com/c/0d49fc455f4a8951a42daf952412a713?family=Helvetica+Neue+Regular);
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(./font/Helvetica-Neue-LT-Pro-55-Roman.ttf);
+  }
 
 html {
     position: relative;

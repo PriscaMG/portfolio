@@ -1,7 +1,13 @@
 /* Style de texte */
-@import url(https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro);
+@font-face {
+    font-family: "Orpheus Pro";
+    src: url(./font/Orpheus-W05-Regular.ttf);
+}
 
-@import url(https://db.onlinewebfonts.com/c/0d49fc455f4a8951a42daf952412a713?family=Helvetica+Neue+Regular);
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(./font/Helvetica-Neue-LT-Pro-55-Roman.ttf);
+  }
 
 html {
     position: relative;
@@ -21,7 +27,7 @@ body {
     position: fixed;
     background-color: #363E21;
     height: 100px;
-    margin-top: -160px;
+    margin-top: -150px;
 }
 
 .Header-menu{
@@ -135,42 +141,43 @@ body {
 /* Première section */
 .section1 .section1-text h1{
     font-family: 'Orpheus Pro', sans-serif;
-    font-size: 110px;
+    font-size: 115px;
     font-weight: 400;
     color: #FFF6ED;
+    letter-spacing: -2px;
 }
 
 .section1 .section1-text {
-    margin-top: 150px;
+    margin-top: 142px;
 }
 
 .section1 .section1-text .titre0{
-    margin-left: 180px;
+    margin-left: 230px;
     font-size: 25px;
-    margin-bottom: -60px;
-    margin-top: 70px;
     color: #E5DFF5;
 }
 
 .section1 .section1-text .titre1{
-    margin-left: 125px;
+    margin-left: 150px;
+    margin-top: -40px;
 }
 
 .section1 .section1-text .titre2{
-    margin-left: 450px;
-    margin-top: -70px;
+    margin-left: 480px;
+    margin-top: -80px;
     font-size: 90px;
 }
 
 .section1 .section1-text .titre3{
     margin-left: 570px;
-    margin-top: -155px;
+    margin-top: -170px;
 }
 
 .section1 .section1-text .titre4{
-    margin-left: 760px;
-    font-size: 26px;
+    margin-left: 780px;
+    font-size: 25px;
     color: #E5DFF5;
+    margin-top: -30px;
 }
 
 .section1 .border1 {
@@ -191,7 +198,7 @@ body {
 .section2 .section2-text .titre5{
     margin-left: 30px;
     margin-top: 220px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #E5DFF5;
@@ -215,7 +222,7 @@ body {
 .section3 .section3-text .titre7{
     margin-left: 30px;
     margin-top: 180px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #E5DFF5;
@@ -247,7 +254,7 @@ body {
 .section4 .section4-text .titre9{
     margin-left: 30px;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #E5DFF5;
@@ -257,7 +264,7 @@ body {
     list-style-type: none;
     font-size: 26px;
     color: #E5DFF5;
-    margin-left: 750px;
+    margin-left: 650px;
     margin-top: -15px;
 }
 
@@ -274,7 +281,7 @@ body {
 }
 
 .categories .toggle-category {
-    margin-left: 450px;
+    margin-left: 550px;
     display: inline-block;
     margin-top: -70px;
     vertical-align: middle; 
@@ -292,7 +299,7 @@ body {
 .section4 .section4-text .ligne1 {
     border-top: #E5DFF5 1px solid;
     justify-content: center;
-    width: 92.5%;
+    width: 94%;
     margin-top: -40px;
     padding-top: 10px;
 }
@@ -300,7 +307,7 @@ body {
 .section4 .section4-text .ligne2, .ligne3, .ligne4, .ligne5 {
     border-top: #E5DFF5 1px solid;
     justify-content: center;
-    width: 92.5%;
+    width: 94%;
     padding-top: 10px;
 }
 
@@ -308,7 +315,7 @@ body {
 .section5 .titre10 {
     margin-left: 30px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #E5DFF5;
