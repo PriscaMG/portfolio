@@ -175,9 +175,16 @@ header {
     z-index: 1; /* Assure que l'overlay est au-dessus de tout autre contenu */
   }
 
+  @media screen and (max-width: 1115px) and (min-width: 900px) {
+    .Header-menu {
+        width: 30%;
+    }
+  }
+
+
   @media screen and (max-width: 900px) {
     .Header-menu {
-      display: none; /* Masquer la liste de liens pour les écrans inférieurs à 900px */
+      display: none; 
     }
   
     .burger-menu {
@@ -298,6 +305,12 @@ header {
 .section3 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section3 .section3-text {
+    display: flex;
+    justify-content: space-between;
 }
 
 .section3 .section3-text .titre7{
@@ -310,17 +323,20 @@ header {
 }
 
 .section3 .section3-text .titre8{
-    margin-left: 300px;
-    margin-top: -200px;
     font-size: var(--step--1);
     color: #E5DFF5;
+    margin-left: 150px;
 }
 
-.section3 img {
+.section3 .image1 img {
     max-height: 800px;
     max-width: 600px;
-    margin-left: 125px;
     margin-top: 20px;
+    margin-left: 200px;
+}
+
+.section3 .image2 img {
+    display: none;
 }
 
 .border3 {
@@ -332,49 +348,88 @@ header {
 }
 
 /* Media Queries pour les écrans de taille différente */
-@media screen and (max-width: 700px) {
-    /* Styles pour les écrans de moins de 600px de large */
-    .section3 {
-        display: block;
-        justify-content: center;
-        width: min(90%);
+@media screen and (max-width: 1115px) and (min-width: 1013px) {
+    .section3 .image1 img {
+        margin-left: 50px;
     }
 
-    .section3 .section3-text .titre7{
-        margin-top: 10px;
-    }
-    
     .section3 .section3-text .titre8{
-        margin-left: 30px;
-        margin-top: 30px;
-        font-size: var(--step--1);
-        color: #E5DFF5;
-    }
-    
-    .section3 img {
-        margin-left: 30px;
-        margin-top: 20px;
-    } 
+        margin-left: 50px;
+}
 }
 
 /* Media Queries pour les écrans de taille différente */
-@media screen and (max-width: 1115px) and (min-width: 700px) {
-    /* Styles pour les écrans de moins de 600px de large */
-    .section3 .section3-text .titre7{
-        margin-left: 30px;
-        margin-top: 180px;
+@media screen and (max-width: 1013px) and (min-width: 865px) {
+    .section3 .section3-text{
+        display: block;
     }
-    
+
     .section3 .section3-text .titre8{
-        margin-left: 150px;
+        margin-left: 30px;
     }
-    
-    .section3 img {
-        max-height: 800px;
-        max-width: 600px;
-        margin-left: 50px;
+
+    .section3 .image1 img {
+        margin-left: 30px;
+    }
+
+    .section3 .section3-text .titre7{
         margin-top: 20px;
-    } 
+    }
+}
+
+/* Media Queries pour les écrans de taille différente */
+@media screen and (max-width: 865px) and (min-width: 632px) {
+    .section3 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 .section3-text{
+        display: block;
+    }
+
+    .section3 .section3-text .titre8{
+        margin-left: 30px;
+    }
+
+    .section3 .image1 img {
+        margin-left: 30px;
+    }
+
+    .section3 .section3-text .titre7{
+        margin-top: 20px;
+    }
+}
+
+/* Media Queries pour les écrans de taille différente */
+@media screen and (max-width: 632px) {
+    .section3 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 .section3-text{
+        display: block;
+    }
+
+    .section3 .section3-text .titre8{
+         margin-left: 30px;
+    }
+
+    .section3 .image1 img {
+        display: none;
+    }
+
+    .section3 .image2 img {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .section3 .section3-text .titre7{
+        margin-top: 20px;
+    }
 }
 
 /* Quatrième section */

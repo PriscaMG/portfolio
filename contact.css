@@ -169,12 +169,18 @@ header {
     background-color: rgba(0, 0, 0, 0.404);
     overflow-x: hidden;
     transition: width 0.5s;
-    z-index: 1; /* Assure que l'overlay est au-dessus de tout autre contenu */
+    z-index: 1; 
+  }
+
+  @media screen and (max-width: 1115px) and (min-width: 900px) {
+    .Header-menu {
+        width: 30%;
+    }
   }
 
   @media screen and (max-width: 900px) {
     .Header-menu {
-      display: none; /* Masquer la liste de liens pour les écrans inférieurs à 900px */
+      display: none; 
     }
   
     .burger-menu {
@@ -195,14 +201,14 @@ header {
 
 
 .barre {
-    width: 100%; /* Largeur de l'élément conteneur */
-    overflow: hidden; /* Cache le débordement de contenu */
+    width: 100%; 
+    overflow: hidden; 
     margin-top: 80px;
     
 }
 
 .barre .texte {
-    white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+    white-space: nowrap; 
     animation: scrollRightToLeft 10s linear infinite;
     position: relative;
     z-index: -1000;
