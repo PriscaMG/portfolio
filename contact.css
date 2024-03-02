@@ -198,12 +198,14 @@ header {
     width: 100%; /* Largeur de l'élément conteneur */
     overflow: hidden; /* Cache le débordement de contenu */
     margin-top: 80px;
+    
 }
 
 .barre .texte {
     white-space: nowrap; /* Empêche le texte de revenir à la ligne */
     animation: scrollRightToLeft 10s linear infinite;
-    z-index: 1;
+    position: relative;
+    z-index: -1000;
 }
 
 @keyframes scrollRightToLeft {
