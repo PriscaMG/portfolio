@@ -8,6 +8,16 @@
     font-family: "Helvetica Neue";
     src: url(./font/Helvetica-Neue-LT-Pro-55-Roman.ttf);
   }
+  :root {
+    --step--2: clamp(0.6667rem, 0.8326rem + -0.2568vi, 0.7813rem);
+    --step--1: clamp(0.9375rem, 0.9095rem + 0.1401vi, 1rem);
+    --step-0: clamp(1.125rem, 0.9569rem + 0.8403vi, 1.5rem);
+    --step-1: clamp(1.35rem, 0.9466rem + 2.0168vi, 2.25rem);
+    --step-2: clamp(1.62rem, 0.8334rem + 3.9328vi, 3.375rem);
+    --step-3: clamp(1.944rem, 0.5464rem + 6.9882vi, 5.0625rem);
+    --step-4: clamp(2.3328rem, -0.025rem + 11.7892vi, 7.5938rem);
+    --step-5: clamp(2.7994rem, -1.0511rem + 19.2521vi, 11.3906rem);
+  }
 
 html {
     position: relative;
@@ -20,15 +30,17 @@ body {
 }
 
 /* Navigateur header */
+header {
+    background-color: #363E21;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    margin-top: -80px;
+}
+
 .Header{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    background-color: #363E21;
-    height: 100px;
-    margin-top: -90px;
-    z-index: 1000;
 }
 
 .Header-menu{
@@ -139,6 +151,49 @@ body {
     transform: scaleX(1);
   }
 
+  .burger-menu {
+    display: none;
+}
+
+.burger-menu img {
+    width: 30px; 
+    cursor: pointer;
+  }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+    overflow-x: hidden;
+    transition: width 0.5s;
+    z-index: 1; /* Assure que l'overlay est au-dessus de tout autre contenu */
+  }
+
+  @media screen and (max-width: 900px) {
+    .Header-menu {
+      display: none; /* Masquer la liste de liens pour les écrans inférieurs à 900px */
+    }
+  
+    .burger-menu {
+      display: block;
+      margin: 50px;
+    }
+
+    .overlay-nav-links {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .overlay-nav-links li {
+        margin-top: 30px;
+    }
+  }
+
+
 .barre {
     width: 100%; /* Largeur de l'élément conteneur */
     overflow: hidden; /* Cache le débordement de contenu */
@@ -162,7 +217,7 @@ body {
 
 .barre .texte {
     color: #E5DFF5;
-    font-size: 70px;
+    font-size: var(--step-2);
     margin-top: 50px;
     word-spacing: 100px;
 }
@@ -176,7 +231,8 @@ body {
 
 .section .texte-left{
     color: #E5DFF5;
-    font-size: 26px;
+    font-size: var(--step-0);
+    width: 30%;
     margin-left: 100px;
 }
 
@@ -184,30 +240,35 @@ form .grand-titre {
     color: #E5DFF5;
 }
 
-form .titre-name{
-    display: flex;
-    justify-content: space-between;
-    color: #E5DFF5;
-    margin-top: -20px;
-    width: 72%;
-}
-
 form .name {
     display: flex;
     justify-content: space-between;
     margin-top: -10px;
+    color: #E5DFF5;
 }
 
 form .name .label1, .label2 {
     width: 250px;
     height: 50px;
+    margin-top: 7px;
     color: #363E21;
     font-size: 18px;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-form .name .label2{
-    margin-left: 15px;
+/* Media Queries pour les écrans de taille différente */
+@media screen and (max-width: 850px) {
+    form .name {
+        display: block;
+    }
+
+    form .name .nom {
+        margin-top: 15px;
+    }
+
+    form .name .label1, .label2 {
+        width: 520px;
+    }
 }
 
 form .mail {
@@ -302,6 +363,51 @@ form span {
     cursor: pointer;
   }
 
+  /* Media Queries pour les écrans de taille différente */
+@media screen and (max-width: 850px) and (min-width: 600px) {
+    .section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto 30px;
+    }
+
+    .section .texte-left{
+        width: 80%;
+        margin-left: 30px;
+    }
+}
+
+ /* Media Queries pour les écrans de taille différente */
+ @media screen and (max-width: 600px) {
+    .section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section .texte-left{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    form .mail input {
+        width: 300px;
+    }
+    
+    form .message textarea {
+        width: 300px;
+    }
+
+    form .name .label1, .label2 {
+        width: 300px;
+    }
+
+    .send input {
+        margin-left: 80px;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #E5DFF5;
@@ -312,8 +418,10 @@ footer {
 
 .footer-social-media ul li {
     list-style-type: none;
-    margin-left: 555px;
     padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-social-media ul li a {
@@ -321,7 +429,9 @@ footer {
 }
 
 footer p {
-    margin-left: 520px;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--step--1);
     color: #363E21;
 }

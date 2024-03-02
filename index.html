@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<script src="index.js"></script>
+
 <body>
     <header>
         <nav class="Header">
@@ -15,17 +15,27 @@
                 <li><a href="portfolio.html" class="active"><span class="active-text">Portfolio</span></a></li>
                 <li><a href="contact.html" class="button"><span class="button-text">Me Contacter</span></a></li>
             </ul>
+            <div class="burger-menu">
+                <img src="./illustration/menu-burger.png" alt="Menu">
+            </div>
         </nav>
     </header>
+    <div class="overlay">
+        <ul class="overlay-nav-links">
+            <li><a href="portfolio.html" class="active"><span class="active-text">Portfolio</span></a></li>
+            <li><a href="contact.html" class="button"><span class="button-text">Me Contacter</span></a></li>
+        </ul>
+    </div>
 
      <!--Première section-->
      <div class="section1">
         <div class="section1-text">
            <p class="titre0">Je suis</p>
-           <h1 class="titre1">Développeur Front-end</h1>
-           <h1 class="titre2">et</h1>
-           <h1 class="titre3">Designer</h1>
-           <p class="titre4">J’utilise React.js pour intégrer les sites et <br> offrir une expérience utilisateur de qualité.</p>
+            <h1>
+                Développeur Front-end 
+                <span>et</span> Designer
+            </h1>
+           <p class="titre1">J’utilise React.js pour intégrer les sites et offrir une expérience utilisateur de qualité.</p>
         </div>
         <div class="border1"></div>
      </div>
@@ -34,10 +44,10 @@
     <div class="section2">
         <div class="section2-text">
             <p class="titre5 ">Mission</p>
-            <p class="titre6">La communication visuelle est ma passion, j’ai débuté <br> en créant des bannières publicitaires sur les 
-            réseaux <br> sociaux et je souhaite partager ma passion aux milliers <br> de visiteurs qui utilisent les sites 
-            web et les applications. <br> Je poursuis mon apprentissage et mon exploration dans <br> ce domaine en constante 
-            évolution pour transmettre <br> mes valeurs : la simplicité et l’impact positif.</p>
+            <p class="titre6">La communication visuelle est ma passion, j’ai débuté en créant des bannières publicitaires sur les 
+            réseaux sociaux et je souhaite partager ma passion aux milliers de visiteurs qui utilisent les sites 
+            web et les applications. Je poursuis mon apprentissage et mon exploration dans ce domaine en constante 
+            évolution pour transmettre mes valeurs : la simplicité et l’impact positif.</p>
         </div>
         <div class="border2"></div>
     </div>
@@ -51,8 +61,8 @@
                Antsirabe 110 - Madagascar</p>
         </div>
         <div><img src="./illustration/profil-professionnel.png" alt="Profil professionnel"></div>
-        <div class="border3"></div>
     </div>
+    <div class="border3"></div>
 
     <!--Quatrième section-->
 <div class="section4">
@@ -115,35 +125,29 @@
             </li>
         <div class="ligne5"></div>
     </ul>
-
-    <div class="border4"></div>
     </div>
+    <div class="border4"></div>
 </div>
 
     <!--Cinquième section-->
     <div class="section5">
         <p class="titre10">Portfolio</p>
         <div class="section5-text">
-                <div>
+                <div class="rond">
                     <p class="date">11/23</p>
                     <p>Projet Superman</p>
                     <a href="portfolio.html">Voir en détails</a>
                 </div>
-                <div>
+                <div class="rond">
                     <p class="date">11/23</p>
                     <p>Projet Batman</p>
                     <a href="portfolio.html">Voir en détails</a>
                 </div>
-                <div>
+                <div class="rond">
                     <p class="date">11/23</p>
                     <p>Projet Black Panther</p>
                     <a href="portfolio.html">Voir en détails</a>
                 </div>
-        </div>
-        <div class="section5-forme">
-                <div class="forme-rond1"></div>
-                <div class="forme-rond2"></div>
-                <div class="forme-rond3"></div>
         </div>
         <div class="border5"></div>
     </div>
@@ -159,8 +163,9 @@
                 </li>
             </ul>
         </div>
-        <p>© Copyright 2024 * Thanks for scrolling *</p>
+        <p>&copy; 2024 prisca - Thanks for scrolling</p>
     </footer>
 
+<script src="index.js"></script>
 </body>
 </html>

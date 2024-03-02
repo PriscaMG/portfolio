@@ -14,8 +14,17 @@
                 <li><a href="portfolio.html" class="active"><span class="active-text">Portfolio</span></a></li>
                 <li><a href="contact.html" class="button"><span class="button-text">Me Contacter</span></a></li>
             </ul>
+            <div class="burger-menu">
+                <img src="./illustration/menu-burger.png" alt="Menu">
+            </div>
         </nav>
     </header>
+    <div class="overlay">
+        <ul class="overlay-nav-links">
+            <li><a href="portfolio.html" class="active"><span class="active-text">Portfolio</span></a></li>
+            <li><a href="contact.html" class="button"><span class="button-text">Me Contacter</span></a></li>
+        </ul>
+    </div>
     
     <div class="barre">
         <div class="texte">✺ Contactez-moi ✺ Contactez-moi ✺ Contactez-moi ✺ Contactez-moi ✺</div>
@@ -23,22 +32,22 @@
 
     <div class="section">
         <div class="texte-left">
-            <p>Je suis reconnaissante de votre intérêt <br> à me contacter. <br> Hâte de s'échanger avec vous.</p>
+            <p>Je suis reconnaissante de votre intérêt à me contacter. Hâte de s'échanger avec vous.</p>
         </div>
 
         <div class="form-right">
             <form action="#" method="post" id="myForm"> 
 
                 <p class="grand-titre">Nom <span>(obligatoire)</span></p>
-                <div class="titre-name">
-                    <p>Prénom</p>
-                    <p>Nom de famille</p>
-                </div>
                 <div class="name">
-                    <label for="prenom"></label><br>
-                    <input class="label1" type="text" id="prenom" name="prenom" required><br>
-                    <label for="NomdeFamille"></label><br>
-                    <input class="label2" type="text" id="NomdeFamille" name="NomdeFamille" required><br>
+                    <div class="prenom">
+                        <label for="prenom">Prénom</label><br>
+                        <input class="label1" type="text" id="prenom" name="prenom" required><br>
+                    </div>
+                    <div class="nom">
+                        <label for="NomdeFamille">Nom de famille</label><br>
+                        <input class="label2" type="text" id="NomdeFamille" name="NomdeFamille" required><br>
+                    </div>
                 </div>
                 <div class="mail">
                     <label for="email">E-mail <span>(obligatoire)</span></label><br>
@@ -56,7 +65,7 @@
             <div class="modal" id="myModal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <p>"Message envoyé ! Merci <span id="thankYouName"></span> 🚀📩"</p>
+                  <p>Message envoyé ! Merci <span id="thankYouName"></span> 🚀📩</p>
                 </div>
             </div>
 
