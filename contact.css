@@ -258,21 +258,6 @@ form .name .label1, .label2 {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-/* Media Queries pour les écrans de taille différente */
-@media screen and (max-width: 850px) {
-    form .name {
-        display: block;
-    }
-
-    form .name .nom {
-        margin-top: 15px;
-    }
-
-    form .name .label1, .label2 {
-        width: 520px;
-    }
-}
-
 form .mail {
     color: #E5DFF5;
     margin-top: 20px;
@@ -366,12 +351,34 @@ form span {
   }
 
   /* Media Queries pour les écrans de taille différente */
+@media screen and (max-width: 850px) {
+    .section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+    }
+
+    form .name {
+        display: block;
+    }
+
+    form .name .nom {
+        margin-top: 15px;
+    }
+
+    form .name .label1, .label2 {
+        width: 520px;
+    }
+}
+
+  /* Media Queries pour les écrans de taille différente */
 @media screen and (max-width: 850px) and (min-width: 600px) {
     .section {
         display: block;
         justify-content: center;
         align-items: center;
-        margin: auto 30px;
+        margin: 0 30px;
     }
 
     .section .texte-left{
@@ -381,11 +388,12 @@ form span {
 }
 
  /* Media Queries pour les écrans de taille différente */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) and (min-width: 370px){
     .section {
         display: block;
         justify-content: center;
         align-items: center;
+        margin: 0 30px;
     }
 
     .section .texte-left{
@@ -407,6 +415,37 @@ form span {
 
     .send input {
         margin-left: 80px;
+    }
+}
+
+ /* Media Queries pour les écrans de taille différente */
+ @media screen and (max-width: 370px) {
+    .section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+    }
+
+    .section .texte-left{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    form .mail input {
+        width: 200px;
+    }
+    
+    form .message textarea {
+        width: 200px;
+    }
+
+    form .name .label1, .label2 {
+        width: 200px;
+    }
+
+    .send input {
+        margin-left: 30px;
     }
 }
 

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     toggleButtons.forEach(button => {
         button.addEventListener("click", function() {
-            const subList = this.nextElementSibling;
+            const subList = this.previousElementSibling;
             const icon = this.querySelector("img");
             const plusIcon = icon.dataset.plus;
             const minusIcon = icon.dataset.minus;
